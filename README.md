@@ -10,15 +10,18 @@ As output, it should produce a JSON response indicating the final position and o
 
 Input format
 =============
+```
 5 5             # top-right corner of the arena
 1 2 N           # initial position of robot-1 and its orientation (N:North / S:South / W:West / E:East)
 LMLMLMLMM       # instructions to move the robot (L:Left / R:Right / M:Move forward)
 3 3 E           # initial position of robot-2 and its orientation (N:North / S:South / W:West / E:East)
 MMRMMRMRRM      # instructions to move the robot (L:Left / R:Right / M:Move forward)
 ....
+```
 
 Output format
 ==============
+```
 [
     {
         "id": 0,
@@ -32,14 +35,18 @@ Output format
         ...
     }
 ]
-
+```
 Implementation Details
 =======================
 
 Programming Language: GoLang
+
 Version: go 1.14 (refer to go.mod file)
+
 Requirements:
+
     github.com/stretchr/testify v1.6.1 (refer to go.mod file)
+    
     github.com/gookit/color v1.2.7 (refer to go.mod file)
 
 
@@ -48,28 +55,31 @@ Instructions to Run the System
 
 To run the code:
 
-1) Go to "robotWars" folder on the command prompt
+1) Go to `robotWars` folder on the command prompt
 
-2) Build the main.go file
-    go build main.go
-
-3) Run the main.go file
-    ./main
-
+2) Build the `main.go` file
+```
+    $ go build main.go
+```
+3) Run the `main.go` file
+```
+   $ ./main
+```
 
 Instructions for System Tests
 =============================
 
-Option 1: Go to each package and individually run the tests
+**Option 1:** Go to each package and individually run the tests
 
-1) Go to "robotWars/models/" folder
-
-2) Run 'go test'
-
-3) Go to "robotWars/backend/" folder
-
-4) Run 'go test'
-
-Option 2: Run all the tests from "robotWars" folder
-
-Run 'go test ./...'
+1) Go to `robotWars/models/` folder and run the test 
+```
+   $ go test
+```
+3) Go to `robotWars/backend/` folder and run the test
+```
+   $ go test
+```
+**Option 2:** Run all the tests from `robotWars` folder
+```
+   $ go test ./...
+```
