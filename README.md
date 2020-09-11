@@ -39,11 +39,11 @@ Output format
 Implementation Details
 =======================
 
-Programming Language: GoLang
+**Programming Language**: GoLang
 
-Version: go 1.14 (refer to go.mod file)
+**Version**: go 1.14 (refer to go.mod file)
 
-Requirements:
+**Requirements**:
 
     github.com/stretchr/testify v1.6.1 (refer to go.mod file)
     
